@@ -1,0 +1,62 @@
+.colores{
+    color: rgb(144, 202, 249);
+    color: rgb(3, 169, 244);
+    color: rgb(21, 101, 192);
+    color: rgb(128, 151, 162);
+    color: rgb(55, 71, 79);
+}
+body{
+    background-color: rgb(3, 169, 244);
+    padding: 0;
+    margin: 0;
+}
+.header{
+    font-family: 'Vollkorn', serif;
+    display: flex;
+    height: 80px;
+    /* border: 1px solid red; */
+}
+.container{
+    height: inherit;
+    display: inherit;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.header nav{
+    height: inherit;
+}
+.header ol{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: inherit;
+}
+.header li{
+    height: inherit;
+    list-style: none;
+}
+.header a{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    margin-right: 2em;
+    font-size: 19px;
+    text-decoration: none;
+    color: rgb(55, 71, 79);
+}
+.hero{
+
+}
+.hero h1{
+    position: absolute;
+    color: rgb(3, 169, 244);
+    font-size: xxx-large;
+}
+.background{
+    width: 100vw;
+}

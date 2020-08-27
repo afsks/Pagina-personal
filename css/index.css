@@ -54,9 +54,48 @@ body{
 }
 .hero h1{
     position: absolute;
-    color: rgb(55, 71, 79);
+    color: rgb(1, 1, 1);
     font-size: xxx-large;
+    margin: 0;
 }
 .background{
     width: 100vw;
+}
+.carousel{
+    width: 100vw;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    box-sizing: border-box;
+}
+.carousel-container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+.carousel-item{
+    width: 330px;
+    height: 255px;
+    border-radius: 20px;
+    background-color: black;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin: center left;
+}
+.carousel-item img{
+    width: 330px;
+    height: 255px;
+}
+.carousel-item:hover ~ .carousel-item{
+    transform: translate3d(100px,0,0);
+}
+.carousel-container:hover .carousel-item{
+    opacity: o.3;
+}
+.carousel-container:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
 }

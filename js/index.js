@@ -1,0 +1,1 @@
+var imagenes = ['../multimedia/certificados/DesarrolloWeb.jpg']

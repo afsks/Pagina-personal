@@ -6,12 +6,14 @@
     color: rgb(55, 71, 79);
 }
 body{
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(3, 169, 244);
     padding: 0;
     margin: 0;
+    /* position: fixed; */
 }
 .header{
-    font-family: 'Vollkorn', serif;
+    /* font-family: 'Vollkorn', serif; */
     display: flex;
     height: 80px;
     /* border: 1px solid red; */
@@ -20,8 +22,13 @@ body{
     height: inherit;
     display: inherit;
     width: 100vw;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+}
+.logo{
+    position: fixed;
+    z-index: 3;
+    left: 0;
 }
 .header img{
     border-radius: 30px;
@@ -55,8 +62,10 @@ body{
 .hero h1{
     position: absolute;
     color: rgb(1, 1, 1);
-    font-size: xxx-large;
+    font-size: 69px;
     margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 .background{
     width: 100vw;
@@ -64,38 +73,42 @@ body{
 .carousel{
     width: 100vw;
     overflow: hidden;
-    padding: 30px;
+    padding: 7px 36px;
     position: relative;
     box-sizing: border-box;
 }
+.h2{
+    color: rgb(55, 71, 79);
+    text-align: center;
+}
 .carousel-container{
-    white-space: nowrap;
+    /* white-space: nowrap; */
     margin: 70px 0px;
     padding-bottom: 10px;
 }
-.carousel-item{
+.item{
     width: 330px;
     height: 255px;
     border-radius: 20px;
     background-color: black;
     overflow: hidden;
-    margin-right: 10px;
+    margin:0 10px 10px 0;
     display: inline-block;
     cursor: pointer;
-    transition: 450ms;
-    transform-origin: center left;
+    transition: 200ms;
+    transform-origin: center;
 }
-.carousel-item img{
+.item img{
     width: 330px;
     height: 255px;
 }
-.carousel-item:hover ~ .carousel-item{
-    transform: translate3d(100px,0,0);
+.item:hover ~ .item{
+    /* transform: translate3d(10px,0,0); */
 }
-.carousel-container:hover .carousel-item{
+.carousel-container:hover .item{
     opacity: o.3;
 }
-.carousel-container:hover .carousel-item:hover{
-    transform: scale(1.5);
+.carousel-container:hover .item:hover{
+    transform: scale(1.08);
     opacity: 1;
 }

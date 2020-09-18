@@ -179,3 +179,35 @@ body{
 .footer-container h3{
     color: #E5E5E5;
 }
+@media screen and (max-width: 400px){
+    body{
+        /* background-color: red; */
+    }
+    .header .link{
+        font-size: 12px;
+    }
+    .header img{
+        width: 34px;
+    }
+    .calltoAction{
+        height: 150px;
+    }
+    .section-container h1{
+        font-size: 27px;
+    }
+    .portafolio-container{
+        grid-template-rows: 70px repeat(4, 250px);
+    }
+    .contacto-container{
+        grid-template-rows: 70px repeat(1, 100px);
+    }
+    .project {
+        border: 1px solid #039AFF;
+    }
+    .contacto-container img {
+        width: 70px;
+    }
+    .vl {
+        width: 5px;
+    }
+}

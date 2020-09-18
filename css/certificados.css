@@ -169,4 +169,11 @@ body{
         font-size: 17px;
         margin: 40px 0;
     }
+    .border{
+        width: 160px;
+        height: 123px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

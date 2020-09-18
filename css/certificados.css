@@ -61,7 +61,7 @@ body{
 .header img{
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.3);
-    /* width: 3.5vw; */
+    width: 50px;
 }
 .header a:hover{
     text-decoration: underline;

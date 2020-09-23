@@ -63,6 +63,7 @@ body{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     height: 300px;
+    width: 100vw;
     background-color: #545658;
     box-shadow: 0 2px 4px 0px #000000;
 }

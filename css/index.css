@@ -17,6 +17,7 @@ body{
     box-shadow: 0 1px 0px #000000;
     position: fixed;
     top: 0;
+    z-index: 40;
     backdrop-filter: saturate(180%) blur(5px);
 }
 .header-container{
@@ -96,7 +97,13 @@ body{
     grid-template-columns: 1fr 10fr 1fr;
     justify-items: center;
     height: inherit;
-    padding: 60px 0 0 0;
+    /* padding: 60px 0 0 0; */
+}
+.h3{
+    display: flex;
+    justify-content: center;
+    color: #E5E5E5;
+    margin: 40px 0 18px 0;
 }
 .vl{
     width: 7px;
@@ -104,24 +111,76 @@ body{
     background-color: #039AFF;
 }
 .portafolio-container{
+    width: 100%;
+    border-radius: 20px;
     display: grid;
+    height: auto;
+    grid-template-rows: 1, 100px;
+    grid-template-columns: repeat(auto-fill, 210px);
+    /* grid-template-rows: repeat(9, 212.5px); */
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    justify-items: center;
+    background-color: #545658;
+    /* margin-bottom: 50px; */
+
+    /* display: grid;
     grid-template-rows: 100px repeat(4, 250px);
     justify-items: center;
     width: 100%;
     background-color: #545658;
-    border-radius: 20px;
+    border-radius: 20px; */
 }
-.portafolio-container h3{
-    color: #E5E5E5;
+
+.border{
+    width: 200px;
+    height: 200px;
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+.post{
+    cursor: pointer;
+    position: relative;
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px 1px #343434;
+    transition: width 100ms 0s ease;
+}
+.post:hover{
+    width: 275px;
+}
+.post-img{
     margin: 0;
 }
-.project{
-    width: 85%;
-    height: 200px;
-    border: 2px solid #039AFF;
-    border-radius: 20px;
+.post-img img{
+    width: 100%;
+    vertical-align: top;
+}
+.post-overlay{
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.post:hover .post-overlay{
+    display: flex;
+}
+.post-overlay p{
+    font-size: 25px;
+}
+.icon-download{
+    font-size: 60px;
 }
 
 .hr{
@@ -195,8 +254,16 @@ body{
     .section-container h1{
         font-size: 27px;
     }
+    .post{
+        width: 95%;
+    }
+    .border{
+        width: 155px;
+        height: 155px;
+    }
     .portafolio-container{
-        grid-template-rows: 70px repeat(4, 250px);
+        grid-template-columns: repeat(auto-fill, 160px);
+        grid-gap: 0px;
     }
     .contacto-container{
         grid-template-rows: 70px repeat(1, 100px);
